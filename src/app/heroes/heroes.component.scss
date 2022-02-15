@@ -7,36 +7,47 @@
   & li {
     cursor: pointer;
     position: relative;
-    background-color: #EEE;
-    margin: .5em;
-    padding: .3em 0;
-    height: 1.6em;
-    border-radius: 4px;
 
     &:hover {
-      color: #607D8B;
-      background-color: #DDD;
       left: .1em;
     }
   }
 }
-.heroes a {
-  color: #888;
-  text-decoration: none;
-  position: relative;
+
+input {
   display: block;
-  width: 250px;
+  width: 100%;
+  padding: .5rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+.heroes a {
+  color: #333;
+  text-decoration: none;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  display: block;
+  width: 100%;
 
   &:hover {
-    color:#607D8B;
+    color: #2c3a41;
+    background-color: #e6e6e6;
+  }
+
+  &:active {
+    background-color: #525252;
+    color: #fafafa;
   }
 }
+
 .heroes .badge {
   display: inline-block;
   font-size: small;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
-  background-color: #607D8B;
+  background-color: #405061;
   line-height: 1em;
   position: relative;
   left: -1px;
@@ -48,23 +59,29 @@
   text-align: right;
 }
 
-button {
-  background-color: #eee;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: Arial sans-serif;
-}
+.add-button {
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 
-button:hover {
-  background-color: #cfd8dc;
+  &:hover {
+    color: white;
+    background-color: #42545C;
+  }
 }
 
 button.delete {
-  position: relative;
-  left: 194px;
-  top: -32px;
-  background-color: gray !important;
-  color: white;
+  position: absolute;
+  left: 210px;
+  top: 5px;
+  background-color: white;
+  color: #525252;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 1px 10px 3px 10px;
+
+  &:hover {
+    background-color: #525252;
+    color: white;
+  }
 }
