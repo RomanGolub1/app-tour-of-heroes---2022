@@ -21,6 +21,7 @@ input {
   margin: 1rem 0;
   box-sizing: border-box;
 }
+
 .heroes a {
   color: #333;
   text-decoration: none;
@@ -30,6 +31,7 @@ input {
   height: 1.6em;
   display: block;
   width: 100%;
+  border-radius: 4px;
 
   &:hover {
     color: #2c3a41;
